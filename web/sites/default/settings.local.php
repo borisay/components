@@ -72,5 +72,16 @@ $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
  *
  */
 $settings['trusted_host_patterns'] = array(
-  '^pwc\.dd$',
+  '^components$',
 );
+$databases['default']['default'] = array (
+  'database' => 'components',
+  'username' => 'root',
+  'password' => '6i41c8',
+  'prefix' => '',
+  'host' => '127.0.0.1',
+  'port' => '8889',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'eUgXwjqdTIKVzPaB2-GDXTodxwBKVQjOLqYXEqF509s0eSg-pUMsVXY9sa8fhH_AKsadPhXWVQ';
